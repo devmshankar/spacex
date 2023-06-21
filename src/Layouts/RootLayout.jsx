@@ -1,6 +1,15 @@
+import Header from "@Templates/Header";
+import { Container } from "@chakra-ui/react";
+import { Outlet } from "react-router-dom";
+
 function RootLayout() {
     return (
-        <div>RootLayout</div>
+        <>
+            <Header />
+            <Container>
+                <Outlet />
+            </Container>
+        </>
     )
 }
 
